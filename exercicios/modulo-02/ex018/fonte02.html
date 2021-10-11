@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Spring';
+            src: url('fonts/SpringateRegular.otf') format('opentype'), url('fonts/SpringateRegular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* 
+                Tipos de formate()
+                - opentype (otf)
+                - truetype (ttf)
+                - enbedded-opentype
+                - truetype-aat (Appe Advanced Typography)
+                - svg
+
+            */
+        }
+        @font-face {
+            font-family: 'Bech';
+            src: url('fonts/BechtlersRegular.otf') format('opentype');
+        }
+        body {
+            font-family: 'Bech', sans-serif;
+            font-style: italic;
+            font-size: 1em;
+            font-weight: normal;
+        }
+        h1 {
+            font-family: 'Spring', cursive;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur ipsam fuga eligendi culpa ipsa tempora, perferendis hic placeat vitae odit exercitationem unde voluptatum eaque quo quidem nam minus ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptatem, dicta recusandae consectetur, quidem rerum numquam ea harum dolorum suscipit maiores corporis veritatis repudiandae itaque adipisci beatae soluta iusto consequuntur.</p>
+</body>
+</html>
