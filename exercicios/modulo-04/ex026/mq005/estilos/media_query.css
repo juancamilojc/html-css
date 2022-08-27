@@ -2,7 +2,7 @@
 
 /* ---- Outros Dispositivos ---- */
 
-@media screen and (min-width: 600px /*768px*/) {
+@media screen and (min-width: 768px) {
     div#menuIcon {
         display: none;
     }
@@ -36,6 +36,6 @@
     }
 
     main {
-        max-width: 600px;
+        width: 768px;
     }
 }
