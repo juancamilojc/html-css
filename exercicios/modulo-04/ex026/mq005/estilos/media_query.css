@@ -2,3 +2,40 @@
 
 /* ---- Outros Dispositivos ---- */
 
+@media screen and (min-width: 600px /*768px*/) {
+    div#menuIcon {
+        display: none;
+    }
+
+    menu#menuItems {
+        display: block;
+    }
+
+    menu > ul {
+        margin: 0.5rem;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    menu > ul > li > a {
+        margin: 0.5rem 0.25rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.75rem;
+        font-size: 0.85rem;
+        box-shadow: 0.1rem 0.1rem 0.25rem #14141445;
+    }
+
+    menu > ul > li > a:hover {
+        background-color: white;
+        color: #141414;
+        font-weight: bold;
+        transform: translate(0, -0.25rem);
+        box-shadow: 0.1rem 0.25rem 0.5rem #14141450;
+    }
+
+    main {
+        max-width: 600px;
+    }
+}

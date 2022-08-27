@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/media_query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <div id="menuIcon" class="material-icons" onclick="clickMenu()">menu</div>
@@ -34,12 +34,20 @@
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menuItems.style.display = 'block';
+            } else {
+                menuItems.style.display = 'none';
+            }
+        }
+
         function clickMenu() {
             if (menuItems.style.display == 'block') {
-                menuItems.style.display = 'none'
+                menuItems.style.display = 'none';
                 
             } else {
-                menuItems.style.display = 'block'
+                menuItems.style.display = 'block';
             }
         }
     </script>
