@@ -14,10 +14,12 @@ body {
   font-size: 1em;
 
   background-color: #ececec;
+
+  transition: 0.3s;
 }
 
 header {
-  padding: 0.75em;
+  padding: 1em;
 
   background-color: #1c1c1c;
   color: #fcfcfc;
@@ -29,21 +31,17 @@ header {
 }
 
 header > h1 {
-  border: 1px dotted blue;
-
   flex: 0 0 7em;
 }
 
 header > nav {
-  border: 1px dotted blue;
-
   display: flex;
   flex-flow: row wrap;
 }
 
 header > nav > a {
-  margin: 0.15em;
-  padding: 0.25em 0.5em;
+  margin: 0.25em;
+  padding: 0.5em;
 
   border-radius: 0.3em;
 
@@ -62,10 +60,12 @@ header > nav > a:hover {
 }
 
 main {
-  margin: 1em;
+  margin: 0 auto 1em;
   padding: 1em;
 
-  border-radius: 0.3em;
+  max-width: 50em;
+
+  border-radius: 0 0 0.3em 0.3em;
 
   background-color: #fcfcfc;
 

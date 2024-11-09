@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+header > h1 {
+  margin: 0.5em;
+  flex: 0 0 auto;
+}
+
+header,
+header > nav {
+  flex-flow: column wrap;
+}
+
+header > nav > a {
+  width: 70vw;
+}
