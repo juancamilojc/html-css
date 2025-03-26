@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header,
+section.flex-content,
+section.normal {
+  padding: 2em;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  color: #21252a;
+}
+
+h1,
+h2 {
+  display: inline-block;
+
+  margin: 2em 0em 0.5em;
+  padding: 0.5em;
+
+  background-color: #21252a;
+  color: #fee8da;
+}
+
+p {
+  margin: 1em 0em;
+  text-align: justify;
+}
+
+section.flex-content {
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #fee8da;
+}
+
+section.flex-content h2 {
+  color: #fefaf9;
+}
+
+section.flex-content > article.media-text {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+section.flex-content > article.media-text > div.text {
+  flex: 2 0;
+}
+
+section.flex-content > article.media-text > div.media {
+  flex: 0 2;
+  margin: 2em;
+
+  align-self: center;
+}
+
+section.flex-content > article.text-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section.flex-content > article.text-media > div.text {
+  flex: 2 0; /* flex-grow: 2; flex-shrink: 0; */
+}
+
+section.flex-content > article.text-media > div.media {
+  flex: 0 2;
+  margin: 2em;
+
+  align-self: center;
+}
+
+section.flex-content > article.text-media > div.media > iframe {
+  border-radius: 0.75em;
+  border-color: #fefaf9;
+}
+
+footer {
+  padding: 1em;
+
+  background-color: #21252a;
+  color: #fefaf9;
+
+  text-align: justify;
+}
+
+footer P {
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+footer a {
+  font-weight: bold;
+
+  color: #a5dbff;
+
+  text-decoration: none;
+}
