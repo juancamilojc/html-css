@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(4, 1fr);
+  gap: 0.5em;
+}
+
+.caixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+}
+
+#caixa1 {
+  background-color: lightcoral;
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+#caixa2 {
+  background-color: lightgreen;
+  grid-area: 2 / 1 / span 2 / span 2;
+}
+
+#caixa3 {
+  background-color: lightblue;
+  grid-area: 2 / 3 / -1 / span 2;
+}
